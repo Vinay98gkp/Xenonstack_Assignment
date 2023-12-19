@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/styled.css' %}">
+</head>
+<body>
+    <h1 align="center" style="margin: 10px;">Contact Us - Messages</h1>
+    <hr>
+    {% if messages %}
+    <style>
+        h5{
+            color: green;
+        }
+    </style>
+     <h5 align="center" style="margin: 10px;">Thanks for contacting us we will get back to you shortly!</h5>
+    {% endif %}
+    
+    <div class="card-list">
+        {% for message in messages reversed %}
+        <a href="/" class="card-item">
+            <!-- <img src="images/developer.jpg" alt="Card Image"> -->
+            <h3>Response</h3>
+            <span class="developer">{{message.name}}</span>
+            <span class="developer">{{message.email}}</span>
+            <h3>{{message.message}}</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+        {% endfor %}
+        
+    </div>
+</body>
+</html>
