@@ -23,6 +23,7 @@ To run this application python 3.9 or above is required
 - Once libraries are installed run command "python manage.py makemigrations"
 - Run command to migrate "python manage.py migrate"
 - To run Django locally use command "python manage.py runserver"
+- Use username "Karthik" and password - "123" to login
 
 
 ## Tools Used
