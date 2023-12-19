@@ -3,7 +3,7 @@
 
 ## Features
 This application supports below mentioned features
-- New User SignUP
+- New user registration, once user sign-ups he will redirected to settings page to update user profile.
 - Exisiting user login and validation
 - Logged-in user can create post by uploading image and caption, on upload user will be redirected to homepage and uploaded post will be visible in feed
 - Logged-in user can update profile 
